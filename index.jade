@@ -4,9 +4,10 @@ extends layout
 block content
   - var arr = [{name:'alex',email:'alex@ya.hoo'},{name:'archee',email:'ohohohohoho@ya.ya'},{name:'diana',email:'ledinki@ya.moo'}];
 
-
-  h1 Welcome to #{title}
-  p Hello, I'm Alex. I like javascipt, jQuery and stuff like it. I watch videos from confrences and related things all the time This is my testing page, along with basic Node stuff I'm going to use express, jade and stylus here. A few days ago I knew litlle of these (as I now do, but that was even less). I'll watch myself here as I go and hopefully end up with smth appropriate for a third-party eye. Say, chat app, to start with...
+  header
+    h1 Welcome to #{title}
+  article
+    p Hello, I'm Alex. I like javascipt, jQuery and stuff like it. I watch videos from confrences and related things all the time This is my testing page, along with basic Node stuff I'm going to use express, jade and stylus here. A few days ago I knew litlle of these (as I now do, but that was even less). I'll watch myself here as I go and hopefully end up with smth appropriate for a third-party eye. Say, chat app, to start with...
   ul
     each ite in arr
      include item
